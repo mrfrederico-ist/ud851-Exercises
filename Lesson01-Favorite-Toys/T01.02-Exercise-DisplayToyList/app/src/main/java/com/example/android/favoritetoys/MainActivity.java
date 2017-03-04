@@ -19,13 +19,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     // COMPLETED (1) Declare a TextView variable called mToysListTextView
-    TextView mToysListTextView;
+    private TextView mToysListTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         // COMPLETED (5) Loop through each toy and append the name to the TextView (add \n for spacing)
         for (String aToyArray : toyArray) {
             mToysListTextView.append(aToyArray + "\n\n\n");
-
         }
     }
 }

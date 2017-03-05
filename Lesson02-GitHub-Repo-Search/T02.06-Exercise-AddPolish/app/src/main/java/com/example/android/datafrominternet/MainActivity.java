@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mSearchResultsTextView;
 
     // DONE (12) Create a variable to store a reference to the error message TextView
-    TextView mErrorMessageTextView;
+    private TextView mErrorMessageTextView;
 
     // DONE (24) Create a ProgressBar variable to store a reference to the ProgressBar
     private ProgressBar mSearchProgressBar;
@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         // DONE (26) Override onPreExecute to set the loading indicator to visible
         @Override
         protected void onPreExecute() {
+            super.onPreExecute();
             mSearchProgressBar.setVisibility(View.VISIBLE);
         }
 

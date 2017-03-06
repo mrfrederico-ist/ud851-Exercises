@@ -89,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_refresh) {
-            GreenAdapter newAdapter = new GreenAdapter(NUM_LIST_ITEMS);
-            mNumbersList.setAdapter(newAdapter);
+            mAdapter = new GreenAdapter(NUM_LIST_ITEMS);
+            mNumbersList.setAdapter(mAdapter);
             return true;
         }
 

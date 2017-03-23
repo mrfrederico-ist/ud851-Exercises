@@ -8,5 +8,21 @@
         app:showAsAction="ifRoom">
 
     </item>
+    <item
+        android:title="@string/search"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_gps"
+                android:title="GPS" />
+            <item
+                android:id="@+id/action_wifi"
+                android:title="WIFI" />
+            <item
+                android:id="@+id/action_ble"
+                android:title="BLE" />
+        </menu>
+    </item>
 
 </menu>
